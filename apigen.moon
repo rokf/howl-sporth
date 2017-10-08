@@ -6,8 +6,8 @@ serpent = require 'serpent'
 
 pat = re.compile([[
 ugens <- {| ugen+ |} -> i2p
-ugen <- {| name args output desc '---' %nl |} -> transform
-name <- 'Name:' %s* {:name: [^%nl%s]+ :} %nl
+ugen <- {| name args output desc '---' %nl? |} -> transform
+name <- 'Name:' %s* {:name: [^%nl%s]+ :} ' '* %nl
 args <- 'Args:' %s* {:args: [^%nl]+ :} %nl
 output <- 'Output:' %s* {:output: [^%nl]+ :} %nl
 desc <- 'Description:' %s* {:desc: [^%nl]+ :} %nl
