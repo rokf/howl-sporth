@@ -1,10 +1,7 @@
-
-mode_reg =
+howl.mode.register
   name: 'sporth'
-  extensions: {'sp'}
+  extensions: { 'sp' }
   create: bundle_load 'sporth_mode'
-
-howl.mode.register mode_reg
 
 unload = ->
   howl.mode.unregister 'sporth'

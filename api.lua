@@ -36,10 +36,10 @@ return {
     description = "# bltriangle\nfreq (f) amp (f) -> f\nBand-limited triangle oscillator"
   },
   bpm2dur = {
-    description = "# bpm2dur\nbpm (f)  -> f\nconvert bpm to duration (seconds) "
+    description = "# bpm2dur\nbpm (f) -> f\nconvert bpm to duration (seconds)"
   },
   bpm2rate = {
-    description = "# bpm2rate\nbpm (f)  -> f\nconvert bpm to rate (Hertz) "
+    description = "# bpm2rate\nbpm (f) -> f\nconvert bpm to rate (Hertz)"
   },
   branch = {
     description = "# branch\ngate (f), sig1 (f), sig2 (f) -> f\nreturns signal based on state of gate (0 = sig1, 1 = sig2)"
@@ -78,7 +78,7 @@ return {
     description = "# clip\nin (f), limit (f) -> f\nclip limiter / distortion"
   },
   clock = {
-    description = "# clock\ntrig, bpm, subdiv  -> f\nClock with subdivisions and triggerable reset"
+    description = "# clock\ntrig, bpm, subdiv -> f\nClock with subdivisions and triggerable reset"
   },
   comb = {
     description = "# comb\nin (f), rev time (f), loop time (f) -> f\ncomb filter"
@@ -111,7 +111,7 @@ return {
     description = "# dmetro\ntime (f) -> f\nTrigger envelope, using time instead of frequency"
   },
   drip = {
-    description = "# drip\ntrig num_tubes amp shake_max freq freq1 freq dettack  -> f\ndripwater physical model"
+    description = "# drip\ntrig num_tubes amp shake_max freq freq1 freq dettack -> f\ndripwater physical model"
   },
   drop = {
     description = "# drop\nf -> (none)\nRemoves the last item on the stack."
@@ -147,7 +147,7 @@ return {
     description = "# fe\ntbl (s) -> varies\nexecute a dynamically loaded ugen"
   },
   fl = {
-    description = "# fl\nfilename (s), tbl  -> n/a\ndynamically load a ugen"
+    description = "# fl\nfilename (s), tbl -> n/a\ndynamically load a ugen"
   },
   floor = {
     description = "# floor\nv1 (f) -> f\nPerforms flooring, returning the integer part."
@@ -156,7 +156,7 @@ return {
     description = "# fm\nfrequency (f), amplitude (f), carrier (f), modulator (f), index (f) -> f\nA simple FM oscillator."
   },
   fof = {
-    description = "# fof\namp fund form oct band ris dec dur iphs iolaps win(s) sine(s) -> f\nfof "
+    description = "# fof\namp fund form oct band ris dec dur iphs iolaps win(s) sine(s) -> f\nfof"
   },
   fofilt = {
     description = "# fofilt\nin, freq, atk, rel -> f\nFOF filter"
@@ -177,7 +177,7 @@ return {
     description = "# gbuzz\nfreq (f), amp(f), nharm (f), lharm(f), mul (f) -> f\nstreson filter"
   },
   gen_eval = {
-    description = "# gen_eval\nname (s), size (f), string  -> n/a\nEvaluates sporth string to table"
+    description = "# gen_eval\nname (s), size (f), string -> n/a\nEvaluates sporth string to table"
   },
   gen_line = {
     description = "# gen_line\nname (s), size (f), args (s) -> ftable\nGenerates a line from ordered list of breakpoints."
@@ -246,7 +246,7 @@ return {
     description = "# lpc\nin, framesize -> f\napply linear-predictive coding (LPC10) to signal"
   },
   lpcsynth = {
-    description = "# lpcsynth\nframesize, ftbl -> f\nLPC synth. Manipulate parameters directly. "
+    description = "# lpcsynth\nframesize, ftbl -> f\nLPC synth. Manipulate parameters directly."
   },
   lpf18 = {
     description = "# lpf18\nin (f) freq (f) res (f) dist (f) -> f\nlow pass filter with tanh distortion"
@@ -267,10 +267,10 @@ return {
     description = "# maytrig\ntrig (f), probability (f) -> f\nRandom selection of trig or no trig."
   },
   metatable_add = {
-    description = "# metatable_add\nname (s), metatable (s), position  -> n/a\nadd ftable to position in metatable"
+    description = "# metatable_add\nname (s), metatable (s), position -> n/a\nadd ftable to position in metatable"
   },
   metatable_copy = {
-    description = "# metatable_copy\nname (s), metatable (s), position  -> n/a\ncreate a new ftable which shares the data at a metatable position"
+    description = "# metatable_copy\nname (s), metatable (s), position -> n/a\ncreate a new ftable which shares the data at a metatable position"
   },
   metatable_create = {
     description = "# metatable_create\nname (s), length (F) -> n/a\ncreate metatable that holds a number of tables"
@@ -327,7 +327,7 @@ return {
     description = "# pan\nin (f) pan (f) -> ff\nEqual power panning. -1 = hardL 1 = hardR"
   },
   pareq = {
-    description = "# pareq\nin,freq,boost,Q,mode(0=peak, 1=low shelf, 2= high shelf) -> f \nparametric equalizer"
+    description = "# pareq\nin,freq,boost,Q,mode(0=peak, 1=low shelf, 2= high shelf) -> f\nparametric equalizer"
   },
   paulstretch = {
     description = "# paulstretch\nstretch (F), window size (F), tbl (s) -> f\nPaulstretch algorithm"
@@ -363,10 +363,10 @@ return {
     description = "# pos\n(none) -> f\nreturns playing time, in seconds"
   },
   posc3 = {
-    description = "# posc3\nfreq, amp -> f \nhigh-precision oscillator with cubic interpolation"
+    description = "# posc3\nfreq, amp -> f\nhigh-precision oscillator with cubic interpolation"
   },
   print = {
-    description = "# print\nval (f/s) label (s) -> f/s\nprints values to terminal "
+    description = "# print\nval (f/s) label (s) -> f/s\nprints values to terminal"
   },
   prop = {
     description = "# prop\nbpm (f), prop string (s) -> f\nParses prop code to produce a set of triggers"
@@ -387,7 +387,7 @@ return {
     description = "# pst\ntog, id, ftname -> f\ntoggle a polysporth sporthlet"
   },
   ptrack = {
-    description = "# ptrack\nin (f)  -> amp (f) pitch (f)\npitch tracking"
+    description = "# ptrack\nin (f) -> amp (f) pitch (f)\npitch tracking"
   },
   rand = {
     description = "# rand\nmin (f) max(f) -> f\npicks random number at start time"
@@ -399,13 +399,13 @@ return {
     description = "# randi\nmin (f), max (f), freq (f) -> f\nRandomized line segment with interpolation"
   },
   ref = {
-    description = "# ref\nname (s)  -> n/a \nsave pointer reference of next pipe in table"
+    description = "# ref\nname (s) -> n/a\nsave pointer reference of next pipe in table"
   },
   render = {
-    description = "# render\nfilename (s)  -> ?\nrenders a sporth file (private variables/tables)"
+    description = "# render\nfilename (s) -> ?\nrenders a sporth file (private variables/tables)"
   },
   reson = {
-    description = "# reson\nin (f)  -> freq (f) bw (f)\nresonator filter"
+    description = "# reson\nin (f) -> freq (f) bw (f)\nresonator filter"
   },
   reverse = {
     description = "# reverse\nin (f), delay (f) -> f\nreverse delay"
@@ -423,7 +423,7 @@ return {
     description = "# rpt\nin (f), trig (f), bpm (f), div (f), rep (f), bufsize (f) -> f\nStutterer / repeater"
   },
   rspline = {
-    description = "# rspline\nmin, max, cps min, cps max -> f\nrandom spline generator "
+    description = "# rspline\nmin, max, cps min, cps max -> f\nrandom spline generator"
   },
   samphold = {
     description = "# samphold\nin (f), trig (f) -> f\nsample and hold"
@@ -444,7 +444,7 @@ return {
     description = "# setdurs\nsize (f) -> n/a\nset total duration (in samples)"
   },
   sget = {
-    description = "# sget\nindex (f) ftname (s)  -> s\npicks a string from a string list"
+    description = "# sget\nindex (f) ftname (s) -> s\npicks a string from a string list"
   },
   sine = {
     description = "# sine\nfreq (f), amp (f) -> f\nSimple sine oscillator."
@@ -453,7 +453,7 @@ return {
     description = "# slice\ntrig (f) id (f) vals (s) buf (s) -> f\nin-memory slice based sampler"
   },
   slick = {
-    description = "# slick\nftname (s)  -> s\npicks a string randomly from string list "
+    description = "# slick\nftname (s) -> s\npicks a string randomly from string list"
   },
   slist = {
     description = "# slist\nftname (s) size (s) slist -> 0\nloads a text file into a string list"
@@ -488,17 +488,20 @@ return {
   talias = {
     description = "# talias\nname, index, ftbl -> n/a\nalias a table value to a variable"
   },
+  talkbox = {
+    description = "# talkbox\nsource, excitation, quality -> f\nhigh-resolution vocoder"
+  },
   tbldur = {
     description = "# tbldur\nftable (s) -> f\nGet duration of table (in seconds)"
   },
   tblrec = {
-    description = "# tblrec\nin (f) trig (f) tbl name (s) -> f\nrecords values to table. "
+    description = "# tblrec\nin (f) trig (f) tbl name (s) -> f\nrecords values to table."
   },
   tblsize = {
     description = "# tblsize\nftable (s) -> f\nGet size of table (in samples)"
   },
   tdiv = {
-    description = "# tdiv\nnum (f) offset (f) -> f \ntrigger divider"
+    description = "# tdiv\nnum (f) offset (f) -> f\ntrigger divider"
   },
   tenv = {
     description = "# tenv\ntrig (f), attack (f), sustain (f), release (f) -> f\nTriggerable linear envelope generator."
